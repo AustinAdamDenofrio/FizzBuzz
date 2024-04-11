@@ -13,7 +13,6 @@ function getValues() {
   endNumber = Number(endNumber);
 
       // validate the num is within the defined values else error
-
   if (isNaN(fizzNumber) || isNaN(buzzNumber) || isNaN(endNumber)) {
   // validate if its a NaN than error for inputting a number
     swal.fire({
@@ -60,13 +59,6 @@ function getValues() {
     });
 
     // if Fizz is greater than Buzz, but is still valid numebers
-  } else if (fizzNumber > buzzNumber) {
-
-    //  build an array up to the endNumber value
-    let generatedNumbers = generateFizzBuzz(buzzNumber, fizzNumber, endNumber);
-    displayFizzBuzz(generatedNumbers);
-
-    // if all is totally correct as expected
   } else {
 
     let generatedNumbers = generateFizzBuzz(fizzNumber, buzzNumber, endNumber);
@@ -125,16 +117,6 @@ function  generateFizzBuzz(fizz, buzz, endNumber) {
 
 
 
-
-
-
-
-
-
-
-
-
-
 function displayFizzBuzz(stringArray) {
 
   let tableHTML = '';
@@ -142,26 +124,8 @@ function displayFizzBuzz(stringArray) {
   for (let index = 0; index < stringArray.length; index++) {
 
     let value = stringArray[index];
-    let className = '';
 
-    // if statement
-    if (value == 'FizzBuzz') {
-
-        className = 'fizzBuzz bg-danger-subtle';
-
-      } else if (value == 'Fizz') {
-
-        className = 'fizz bg-success-subtle';
-
-      } else if (value == 'Buzz') {
-
-        className = 'buzz bg-primary-subtle';
-
-      }
-
-
-
-    tableHTML += `<tr><td class="${className}">${value}</td></tr>`;
+    tableHTML += `<tr><td class="${value}">${value}</td></tr>`;
   }
 
 
