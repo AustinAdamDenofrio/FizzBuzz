@@ -129,8 +129,8 @@ footer .bi:hover{
 /* #endregion */
 
 
-.fizz,
-.buzz,
-.fizzBuzz {
+.Fizz,
+.Buzz,
+.FizzBuzz {
     font-weight: 700;
 }
