@@ -22,7 +22,7 @@ function getValues() {
       text: `Please enter numbers only for Fizz Buzz to work properly.`
     });
 
-    // Fizz number is between 0-1000
+    // Fizz number isnt between 0-1000
   } else if (fizzNumber < 0 || fizzNumber > 1000) {
     swal.fire({
       icon:'error',
@@ -31,7 +31,7 @@ function getValues() {
       text: `Please ensure Fizz is between 0-1000 for Fizz Buzz to work properly.`
     });
 
-    // buzz is between 0-1000
+    // buzz isnt between 0-1000
   } else if (buzzNumber < 0 || buzzNumber > 1000) {
     swal.fire({
       icon:'error',
@@ -40,7 +40,7 @@ function getValues() {
       text: `Please ensure Buzz is between 0-1000 for Fizz Buzz to work properly.`
     });
 
-      // End Number is between 0-1000
+      // End Number isnt between 0-1000
   } else if (endNumber < 0 || endNumber > 1000) {
     swal.fire({
       icon:'error',
