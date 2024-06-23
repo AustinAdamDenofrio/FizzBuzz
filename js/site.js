@@ -135,7 +135,6 @@ function displayFizzBuzz(stringArray) {
   // change that HTML value to include the string of numbers and html we have created.
   tbody.innerHTML = tableHTML;
 
-
 }
 
 
